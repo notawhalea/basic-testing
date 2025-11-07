@@ -16,6 +16,7 @@ describe('resolveValue', () => {
 describe('throwError', () => {
   test('should throw error with provided message', () => {
     const message = 'Custom failure!';
+
     expect(() => throwError(message)).toThrow(message);
   });
 

@@ -113,7 +113,6 @@ const validTestCases = [
 ];
 
 const invalidTestCases = [
-  // Невалидное действие
   { a: 1, b: 2, action: 'INVALID_OP', description: 'invalid action string' },
   { a: 1, b: 2, action: null, description: 'null action' },
   { a: 1, b: 2, action: 999, description: 'invalid action number' },

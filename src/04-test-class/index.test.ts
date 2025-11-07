@@ -91,6 +91,7 @@ describe('BankAccount', () => {
     const fetchBalanceMock = jest
       .fn()
       .mockResolvedValue(newBalance) as jest.Mock<Promise<number | null>, []>;
+
     account.fetchBalance = fetchBalanceMock;
 
     await account.synchronizeBalance();
